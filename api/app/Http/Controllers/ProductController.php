@@ -22,8 +22,9 @@ class ProductController extends Controller
     {
         $product = new Product();
         $product->description = $request->description;
-        $product->precio = $request->precio;
+        $product->price = $request->price;
         $product->stock = $request->stock;
+
         $product->save();
     }
 
